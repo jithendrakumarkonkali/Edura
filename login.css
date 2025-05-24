@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a3f47; /* Slightly lighter container bg for depth */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin: 0 0 10px;
+    color: #61dafb; /* Edura title color */
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-weight: normal;
+}
+
+label {
+    display: block;
+    margin-top: 15px; /* Increased margin */
+    text-align: left; /* Align labels left */
+    width: 80%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px; /* Increased padding */
+    width: 80%;
+    max-width: 300px;
+    margin: 8px 0 15px 0; /* Adjusted margin */
+    border: 1px solid #555; /* Added subtle border */
+    border-radius: 5px;
+    background-color: #282c34; /* Input background */
+    color: white; /* Input text color */
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #aaa;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Keeps buttons apart */
+    align-items: center; /* Vertically align buttons if they wrap */
+    width: 80%;
+    max-width: 300px;
+    margin: 25px auto 0 auto; /* Adjusted margin */
+}
+
+button {
+    padding: 12px 20px; /* Increased padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.register {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.register:hover {
+    background-color: #218838; /* Darker green */
+}
+
+.login {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+.login:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}
