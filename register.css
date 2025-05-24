@@ -1,0 +1,104 @@
+body {
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height for scrollable content */
+    margin: 0;
+    padding: 20px 0; /* Add padding for smaller screens */
+}
+
+.container {
+    text-align: center;
+    padding: 30px; /* Increased padding */
+    background-color: #3a3f47; /* Slightly lighter container bg for depth */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 450px; /* Max width for the form container */
+}
+
+h1 {
+    font-size: 8rem; /* Adjusted for balance */
+    margin: -0.1em 0 0.1em 0; /* Adjusted margin */
+    color: #61dafb; /* Edura title color */
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em; /* Adjusted margin */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form elements */
+    margin-top: 1em;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    align-self: flex-start; /* Align labels to the start of input fields */
+    width: 100%; /* Make label take full width of form control group */
+    max-width: 300px; /* Consistent with input width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] { /* Added new input types */
+    padding: 12px;
+    margin-bottom: 1.2em; /* Increased margin */
+    border: 1px solid #555; /* Added subtle border */
+    border-radius: 5px;
+    width: 100%; 
+    max-width: 300px; /* Consistent width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    background-color: #282c34;
+    color: white;
+}
+
+input[type="date"] {
+    color-scheme: dark; /* Improves date picker appearance in dark mode */
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+    color: #aaa;
+}
+
+.register-btn {
+    background-color: #28a745; /* Green from login.css */
+    color: white;
+    padding: 12px 25px; /* Increased padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Margin above button */
+}
+
+.register-btn:hover {
+    background-color: #218838; /* Darker green */
+}
+
+.login-link {
+    margin-top: 20px; /* Increased margin */
+    font-size: 0.95em; /* Slightly larger */
+}
+
+.login-link a {
+    color: #61dafb; /* Light blue for links */
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

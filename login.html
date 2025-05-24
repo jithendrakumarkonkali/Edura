@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edura - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 10rem; font-family: Arial, Helvetica, sans-serif;">Edura</h1>
+        <h2 style="font-size: 1.5rem;">Welcome to Edura</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="password" required>
+            <div class="button-container">
+                <button type="button" class="register" onclick="window.location.href='register.html';">Register</button>
+                <button type="submit" class="login">Login</button>
+            </div>
+        </form>
+        <p>Login using your credentials.</p>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
