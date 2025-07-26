@@ -13,9 +13,5 @@
       "src": "/(.*)",
       "dest": "edura-frontend/dist/$1"
     }
-  ],
-  "installCommand": "npm install --prefix edura-frontend && npm install --prefix edura-backend",
-  "buildCommand": "npm run build --prefix edura-frontend",
-  "outputDirectory": "edura-frontend/dist",
-  "ignoreBuildErrors": true
+  ]
 }
