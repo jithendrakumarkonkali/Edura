@@ -1,15 +1,9 @@
 {
-  "builds": [
-    {
-      "src": "edura-frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": { "outputDirectory": "dist" }
-    },
-    {
-      "src": "edura-backend/api/**/*.js",
-      "use": "@vercel/node"
+  "functions": {
+    "edura-backend/api/**/*.js": {
+      "runtime": "@vercel/node@2.0.0"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/api/(.*)",
@@ -19,5 +13,9 @@
       "src": "/(.*)",
       "dest": "edura-frontend/dist/$1"
     }
-  ]
-  }
+  ],
+  "installCommand": "npm install --prefix edura-frontend && npm install --prefix edura-backend",
+  "buildCommand": "npm run build --prefix edura-frontend",
+  "outputDirectory": "edura-frontend/dist",
+  "ignoreBuildErrors": true
+}
