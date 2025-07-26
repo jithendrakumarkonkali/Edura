@@ -19,5 +19,10 @@
       "src": "/(.*)",
       "dest": "edura-frontend/dist/$1"
     }
-  ]
+  ],
+  "functions": {
+    "edura-backend/api/**/*.js": {
+      "runtime": "@vercel/node@2.0.0"
+    }
+  }
 }
