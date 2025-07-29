@@ -14,9 +14,9 @@ function Edura() {
 
   const [showRegister, setShowRegister] = useState(false);
   // If user is logged in on load, default to 'home', otherwise stay on default (which will render auth-container)
-  const [currentPage, setCurrentPage] = useState(isLoggedIn ? 'home' : 'login'); // New: Default to home if logged in
+  const [currentPage, setCurrentPage] = useState(isLoggedIn ? 'home' : 'login');
   const [courses, setCourses] = useState([]);
-  const [selectedCourse, setSelectedCourse] = useState(null); // Added this state if not already present
+  const [selectedCourse, setSelectedCourse] = useState(null);
 
   // Form states (rest of these are unchanged)
   const [loginUsername, setLoginUsername] = useState('');
