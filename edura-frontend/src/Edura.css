@@ -5,18 +5,17 @@
   text-align: center;
 }
 
-/* Auth Container (Login/Register) */
 .auth-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh; /* Adjust as needed */
+  min-height: 80vh;
 }
 
 .auth-container h1 {
   margin-bottom: 20px;
-  color: #646cff; /* Match link color for emphasis */
+  color: #646cff; 
 }
 
 .login-form,
@@ -148,7 +147,7 @@
 }
 
 .course-item.selected {
-  border: 2px solid #646cff; /* Highlight selected course */
+  border: 2px solid #646cff;
   background-color: #444;
 }
 
@@ -188,7 +187,7 @@
   transition: background-color 0.25s;
 }
 
-.add-course-screen button:nth-of-type(2) { /* Back button */
+.add-course-screen button:nth-of-type(2) { 
     background-color: #6c757d;
 }
 
@@ -228,7 +227,7 @@
     border: 1px solid transparent;
     font-size: 1em;
     font-weight: 500;
-    background-color: #6c757d; /* Grey for back button */
+    background-color: #6c757d; 
     color: white;
     cursor: pointer;
     transition: background-color 0.25s;
