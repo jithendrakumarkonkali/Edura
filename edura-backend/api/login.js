@@ -27,7 +27,6 @@ module.exports = async (req, res) => {
             return res.status(401).json({ error: 'Invalid credentials' });
         }
 
-        // In a real app, you'd generate a JWT here
         res.status(200).json({ message: 'Login successful!', user: { id: user.id, username: user.username, name: user.name } });
 
     } catch (err) {
