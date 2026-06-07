@@ -9,6 +9,8 @@ yarn-error.log*
 **/edura-backend/uitls/.env
 **/edura-frontend/.env.local
 **/edura-frontend/.env.*.local
+*.env
+.env
 
 # Build output (specific to each project)
 **/edura-frontend/dist/
