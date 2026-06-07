@@ -6,6 +6,7 @@ yarn-error.log*
 # Environment variables (specific to each project)
 **/edura-backend/.env
 **/edura-frontend/.env
+**/edura-backend/uitls/.env
 **/edura-frontend/.env.local
 **/edura-frontend/.env.*.local
 
